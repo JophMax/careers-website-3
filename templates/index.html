@@ -16,17 +16,22 @@
     </center>
 
 
-    <center><h2>About Us</h2></center>
-
-    <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget sollicitudin dolor, eu scelerisque ipsum. Quisque porta sapien sit amet sem luctus fermentum. Fusce interdum suscipit odio ut scelerisque. Aenean porta erat vitae semper auctor. Donec volutpat sapien ut consequat tincidunt. Suspendisse mattis ut urna ac bibendum. Sed non lectus erat. Donec sit amet ultrices urna. Nulla erat ligula, dapibus nec felis eget, mollis venenatis nibh. Vivamus fringilla euismod turpis sit amet luctus. Sed ut erat vitae metus euismod fermentum. Duis interdum mauris a lacus efficitur gravida. Donec at urna vulputate, consectetur quam vitae, vulputate eros. Curabitur a metus finibus, lobortis augue sed, facilisis lectus. Duis sollicitudin tincidunt arcu, in facilisis nisl fermentum sed. Duis ac odio eget ante tristique condimentum id id massa. </p>
-
+    <center><h2 class="mt-4">About Us</h2></center>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget sollicitudin dolor, eu scelerisque ipsum. Quisque porta sapien sit amet sem luctus fermentum. Fusce interdum suscipit odio ut scelerisque. Aenean porta erat vitae semper auctor. Donec volutpat sapien ut consequat tincidunt. Suspendisse mattis ut urna ac bibendum. Sed non lectus erat. Donec sit amet ultrices urna. Nulla erat ligula, dapibus nec felis eget, mollis venenatis nibh. Vivamus fringilla euismod turpis sit amet luctus. Sed ut erat vitae metus euismod fermentum. Duis interdum mauris a lacus efficitur gravida. Donec at urna vulputate, consectetur quam vitae, vulputate eros. Curabitur a metus finibus, lobortis augue sed, facilisis lectus. Duis sollicitudin tincidunt arcu, in facilisis nisl fermentum sed. Duis ac odio eget ante tristique condimentum id id massa. </p>
+      </div>
+    <div class="d-none d-md-block col-md-6">
+      <img src="https://careers-website--josephmaxwell4.repl.co/static/people.jpg" style="height:312px;border-radius:4px" class="image-fluid"/>
+    </div>
+    </div>
 
   <center><h2 class="text-center mt-4 mb-4">Jobs</h2></center>
   {% for job in jobs %}
     {% include 'jobindex.html' %}
   {% endfor %}
   <div>
-  <center><button class="btn btn-info btn-lg">Contact Us</button></center>
+  <center><button class="btn btn-info btn-lg mt-4">Contact Us</button></center>
 
     {% include 'footer.html' %}
   </div>
